@@ -1,0 +1,22 @@
+{
+  "name": "plugin-temp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/npm-start.js",
+    "develop_vite": "vite build --watch",
+    "build": "vite build && kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip",
+    "develop_pack": "npm run pack --watch",
+    "pack": "kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  }
+}
