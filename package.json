@@ -5,9 +5,9 @@
   "scripts": {
     "start": "node scripts/npm-start.js",
     "develop_vite": "vite build --watch",
-    "build": "vite build && kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip",
+    "build": "vite build && kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip dist/out",
     "develop_pack": "npm run pack --watch",
-    "pack": "kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip",
+    "pack": "kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip dist/out",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
